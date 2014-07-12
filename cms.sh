@@ -53,3 +53,7 @@ apt-get install libmagickwand-dev
 
 Select some attributes from data model
 Widget.select("name,id").all
+
+gem 'execjs'
+gem 'therubyracer', platforms: :ruby
+
