@@ -54,12 +54,10 @@ mysqldump -uroot -pxxx -hxxx dbname > five9cms_production.sql
      To use asset in development env
      rake assets:precompile RAILS_ENV=development 
 
-36.  scripts/rails server
-37.  (ruby server remains running)
 
 Select some attributes from data model
 Widget.select("name,id").all
 
-gem 'execjs'
+Ruby Runtime
 gem 'therubyracer', platforms: :ruby
 
