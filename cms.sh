@@ -35,7 +35,6 @@ apt-get install libmagickwand-dev
 24.  mysqld
 25.  (mysqld will remain running, so open a separate console)
 mysqldump -uroot -pxxx -hxxx dbname > five9cms_production.sql
-
 26.  rake db:create && rake db:migrate or
 27.  rake db:setup
 28.  mysql -uroot five9_development < db/dumps/five9cms_production.sql
@@ -44,6 +43,14 @@ mysqldump -uroot -pxxx -hxxx dbname > five9cms_production.sql
 30.  elasticsearch -f -D es.config=/usr/local/Cellar/elasticsearch/0.90.3/config/elasticsearch.yml (it will ask you to install Java, so agree and install it)
 31.  elasticsearch -f -D es.config=/usr/local/Cellar/elasticsearch/0.90.3/config/elasticsearch.yml (now it should start OK)
 32.  (elasticsearch remains running, so open a new console)
+apt-get install openjdk-7-jre-headless -y
+wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.2.2.deb
+dpkg -i elasticsearch-1.2.2.deb
+### NOT starting elasticsearch by default on bootup, please execute
+ sudo update-rc.d elasticsearch defaults 95 10
+### In order to start elasticsearch, execute
+ sudo /etc/init.d/elasticsearch start
+ 
 33.  guard -P livereload
 34.  (guard remains running, so open a new console)
 35.  unzip media_library archive into five9cms/public/media_library/...
@@ -53,7 +60,6 @@ mysqldump -uroot -pxxx -hxxx dbname > five9cms_production.sql
      
      To use asset in development env
      rake assets:precompile RAILS_ENV=development 
-
 
 Select some attributes from data model
 Widget.select("name,id").all
