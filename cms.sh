@@ -2,7 +2,7 @@
 2.   rvm install ruby-1.9.3-p194
 3.   sudo port install git-core +svn +doc +bash_completion +gitweb
 4.   git clone https://github.com/generalthings/five9cms
-	 git clone https://github.com/Five9/CorpWebCMS.git
+     git clone https://github.com/Five9/CorpWebCMS.git
 
 5.   ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 	 ruby -e "$(wget -O- https://raw.github.com/Homebrew/linuxbrew/go/install)"
