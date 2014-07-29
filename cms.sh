@@ -13,6 +13,8 @@
 8.   pbcopy /Users/<yourusername>/.ssh/id_rsa.pub (it will copy your public key into clipboard)
 9.   go to www.github.com and paste your public key to GitHub (paste it from clipboard)
 10.  ssh -T git@github.com (check connection OK)
+     ssh -vT git@github.com
+
 11.  gem install bundler
 12.  bundle install (it will fail at some step)
 
