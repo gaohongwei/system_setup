@@ -57,6 +57,11 @@ dpkg -i elasticsearch-1.2.2.deb
 34.  (guard remains running, so open a new console)
 35.  unzip media_library archive into five9cms/public/media_library/...
 
+Error:
+undefined method `enforce_available_locales=' for I18n:Module (NoMethodError)
+
+
+
      rm javascripts/application.js
      rm stylesheets/application.css
      
