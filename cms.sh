@@ -59,6 +59,7 @@ dpkg -i elasticsearch-1.2.2.deb
 
 Error:
 undefined method `enforce_available_locales=' for I18n:Module (NoMethodError)
+#gem 'faker'
 
 
 
