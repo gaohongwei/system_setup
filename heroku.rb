@@ -27,3 +27,7 @@ git add directoryname
 
 clone code from heroku
 heroku git:clone -a myapp
+
+Permission denied (publickey).
+heroku keys:add ~/.ssh/id_rsa.pub
+heroku git:clone -a myapp
