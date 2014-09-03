@@ -19,6 +19,13 @@ $ git reset --soft HEAD~1     (2)
 $ edit                        (3)
 $ git add ....                (4)
 $ git commit -c ORIG_HEAD     (5)  
+
+# Checkin histroy
+git log
+git log -p -2
+git log -U1 --word-diff
+git log --stat
+git log --pretty=oneline
   
 fatal: unable to auto-detect email address (got 'kwei@ubuntu.(none)')
 git config --global user.email "kwei@five9.com"
