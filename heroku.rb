@@ -1,3 +1,9 @@
+
+Install heroku
+gem install heroku
+heroku --version
+
+
 git init
 git add .
 git commit -m "add root routes"
@@ -18,3 +24,6 @@ heroku pg:reset TCM_productionheroku restart
 git reset --soft HEAD~3
 git rm -rf directory
 git add directoryname
+
+clone code from heroku
+heroku git:clone -a myapp
