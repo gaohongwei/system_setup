@@ -12,6 +12,14 @@ git push -u origin master
   (use "git checkout -- <file>..." to discard changes in working directory)
   (use "git reset HEAD <file>..." to unstage)
   
+Undo a commit and redo
+
+$ git commit ...              (1)
+$ git reset --soft HEAD~1     (2)
+$ edit                        (3)
+$ git add ....                (4)
+$ git commit -c ORIG_HEAD     (5)  
+  
 fatal: unable to auto-detect email address (got 'kwei@ubuntu.(none)')
 git config --global user.email "kwei@five9.com"
 git config --global user.name "kevin-five9"  
