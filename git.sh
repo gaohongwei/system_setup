@@ -1,6 +1,7 @@
 touch README.md
 git init
 git add README.md
+git reset  # Untag all files
 git reset HEAD file1 # unstage
 git checkout f1 #discard changes
 git commit -m "first commit"
