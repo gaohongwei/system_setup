@@ -61,6 +61,14 @@ heroku run rake db:migrate
 heroku run rake db:seed
 heroku restart
 
+
+To drop the database, if you are using SHARED_DATABASE_URL:
+heroku pg:reset DATABASE
+db/migrate might have been loaded multiple times
+You need drop it
+git rm db/migrate
+then commit and push
+
 heroku logs
 heroku ps:scale web=1
 heroku pg:reset TCM_productionheroku restart
