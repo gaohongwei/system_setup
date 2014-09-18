@@ -57,6 +57,7 @@ gem install heroku
 heroku git:remote -a iask
 heroku keys:add
 git push heroku master --force
+git commit -m "first checkin";git push heroku master --force
 heroku run rake db:migrate
 heroku run rake db:seed
 heroku restart
