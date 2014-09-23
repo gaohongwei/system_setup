@@ -19,23 +19,23 @@ apt-get -y install $list
 #sudo -E apt-get -q -y install mysql-server
 mysqladmin -u root password dbroot
 
-user=www
-adduser --disabled-password --gecos "" $user
-adduser  $user rvm
-#deluser  $user rvm
 
 \curl -L https://get.rvm.io | bash -s stable
 #source /etc/profile.d/rvm.sh
 RVM='/usr/local/rvm/bin/rvm'
-$RVM install ruby -v 2.1.1
+$RVM install ruby -v 2.1.2
 #install ruby -v 2.1.1
-gem install --no-rdoc --no-ri rails -v 4.0.3
+gem install --no-rdoc --no-ri rails -v 4.1.6
 gem install heroku
 
-cmds="rvm install ruby -v 2.1.1"
+cmds="rvm install ruby -v 2.1.2"
 su  -c $cmds - www
 su  -c "$cmds" - kwei
 
+user=www
+adduser --disabled-password --gecos "" $user
+adduser  $user rvm
+#deluser  $user rvm
 
 # 14.04 LTS not 12.04
 apt-get install libmagick++-dev
