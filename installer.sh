@@ -62,3 +62,8 @@ SELECT version();
   mysql -uroot -p$DBPWD -e "drop database $DBNAME"
   sql="create database $DBNAME CHARACTER SET utf8 COLLATE utf8_general_ci"
   mysql -uroot -p$DBPWD -e "$sql"
+  
+  #change hostname
+  view /ect/hosts
+  sudo hostname your-new-name
+  sudo /etc/init.d/networking restart
