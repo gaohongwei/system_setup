@@ -67,3 +67,4 @@ SELECT version();
   view /ect/hosts
   sudo hostname your-new-name
   sudo /etc/init.d/networking restart
+  relogin
