@@ -38,7 +38,7 @@ adduser  $user rvm
 #deluser  $user rvm
 
 # 14.04 LTS not 12.04
-apt-get install libmagick++-dev
+apt-get -y install libmagick++-dev
 gem install rmagick
 
 #postgres
