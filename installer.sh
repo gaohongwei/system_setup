@@ -12,7 +12,7 @@ sudo /etc/init.d/ssh restart
 
 
 export DEBIAN_FRONTEND=noninteractive
-list="openssh-server vim git mysql-server libmysqlclient-dev curl"
+list="openssh-server vim git mysql-server libmysqlclient-dev curl libmagick++-dev"
 apt-get -y install $list
 
 # mysql
@@ -23,12 +23,12 @@ mysqladmin -u root password dbroot
 \curl -L https://get.rvm.io | bash -s stable
 #source /etc/profile.d/rvm.sh
 RVM='/usr/local/rvm/bin/rvm'
-$RVM install ruby -v 2.1.2
+$RVM install ruby -v 2.1.3
 #install ruby -v 2.1.1
 gem install --no-rdoc --no-ri rails -v 4.1.6
 gem install heroku
 
-cmds="rvm install ruby -v 2.1.2"
+cmds="rvm install ruby -v 2.1.3"
 su  -c $cmds - www
 su  -c "$cmds" - kwei
 
@@ -38,7 +38,7 @@ adduser  $user rvm
 #deluser  $user rvm
 
 # 14.04 LTS not 12.04
-apt-get -y install libmagick++-dev
+#apt-get -y install libmagick++-dev
 gem install rmagick
 
 #postgres
