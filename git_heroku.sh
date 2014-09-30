@@ -55,6 +55,8 @@ git commit -m "first checkin"
 git remote -v
 gem install heroku
 heroku git:remote -a iask
+# Remove existing one
+# git remote rm heroku
 heroku keys:add
 git push heroku master --force
 git commit -m "first checkin";git push heroku master --force
