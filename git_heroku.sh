@@ -49,6 +49,8 @@ git clone -b v10102014 https://github.com/five9/CorpWebCMS
 git clone  https://github.com/five9/CorpWebCMS
 git commit -m "first commit"
 git push -u origin v10102014
+git push origin --delete production_0 # delete branch
+git push origin --delete production_1 # delete branch
 
 #######################################
 Install heroku
