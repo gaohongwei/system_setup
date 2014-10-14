@@ -44,6 +44,13 @@ http://tecadmin.net/how-to-upgrade-git-version-1-7-10-on-centos-6/
 git clone https://username:password@github.com/username/repository.git
 
 #######################################
+clone master/branch
+git clone -b v10102014 https://github.com/five9/CorpWebCMS
+git clone  https://github.com/five9/CorpWebCMS
+
+
+
+#######################################
 Install heroku
 gem install heroku
 heroku --version
