@@ -47,8 +47,8 @@ git clone https://username:password@github.com/username/repository.git
 clone master/branch
 git clone -b v10102014 https://github.com/five9/CorpWebCMS
 git clone  https://github.com/five9/CorpWebCMS
-
-
+git commit -m "first commit"
+git push -u origin v10102014
 
 #######################################
 Install heroku
