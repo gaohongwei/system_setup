@@ -57,6 +57,8 @@ git pull origin master
 #################### Rerun some sql ####################
 rake db:migrate:redo VERSION=20141012220250
 #################### Restart apache ####################
+sudo service httpd restart
+
 sudo a2enmod passenger
 sudo service apache2 restart
 
