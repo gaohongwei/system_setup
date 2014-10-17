@@ -52,13 +52,15 @@ git push -u origin v10102014
 git push origin --delete production_0 # delete branch
 git push origin --delete production_1 # delete branch
 
-#######################################
-# checkout again
+#################### checkout again ####################
 git pull origin master
-#######################################
-# Rerun some sql
+#################### Rerun some sql ####################
 rake db:migrate:redo VERSION=20141012220250
-#######################################
+#################### Restart apache ####################
+sudo a2enmod passenger
+sudo service apache2 restart
+
+
 
 Install heroku
 gem install heroku
