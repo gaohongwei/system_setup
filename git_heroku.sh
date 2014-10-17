@@ -53,6 +53,13 @@ git push origin --delete production_0 # delete branch
 git push origin --delete production_1 # delete branch
 
 #######################################
+# checkout again
+git pull origin master
+#######################################
+# Rerun some sql
+rake db:migrate:redo VERSION=20141012220250
+#######################################
+
 Install heroku
 gem install heroku
 heroku --version
