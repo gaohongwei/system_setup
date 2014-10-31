@@ -1,3 +1,11 @@
+webdevhttpd001.scl.five9.com; 10.7.47.111
+webdevhttpd002.scl.five9.com; 10.7.47.112
+webdevdb001.scl.five9.com;
+webdevdb002.scl.five9.com;
+staging01.five9.com;
+prod-mgmt-httpd001.scl.five9.com,  10.7.2.101
+prod-mgmt-httpd002.scl.five9.com,  10.7.2.102
+
 1.   curl -L https://get.rvm.io | bash -s stable --ruby=1.9.3 (for some reason it didn't install Ruby for me in full, so I had to do the next line too)
 2.   rvm install ruby-1.9.3-p194
 3.   sudo port install git-core +svn +doc +bash_completion +gitweb
