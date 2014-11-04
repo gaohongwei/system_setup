@@ -1,8 +1,9 @@
 webdevhttpd001.scl.five9.com; 10.7.47.111
 webdevhttpd002.scl.five9.com; 10.7.47.112
-webdevdb001.scl.five9.com;
+webdevdb001.scl.five9.com; 
 webdevdb002.scl.five9.com;
-staging01.five9.com;
+staging01.five9.com; 10.7.42.14
+staging02.five9.com; 10.7.42.15
 prod-mgmt-httpd001.scl.five9.com,  10.7.2.101
 prod-mgmt-httpd002.scl.five9.com,  10.7.2.102
 
