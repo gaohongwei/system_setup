@@ -6,6 +6,8 @@ staging01.five9.com; 10.7.42.14
 staging02.five9.com; 10.7.42.15
 prod-mgmt-httpd001.scl.five9.com,  10.7.2.101
 prod-mgmt-httpd002.scl.five9.com,  10.7.2.102
+DB1 Master prod-db001.scl.five9.com (10.7.3.101)
+DB2 Slave prod-db002.scl.five9.com (10.7.3.102).
 
 1.   curl -L https://get.rvm.io | bash -s stable --ruby=1.9.3 (for some reason it didn't install Ruby for me in full, so I had to do the next line too)
 2.   rvm install ruby-1.9.3-p194
