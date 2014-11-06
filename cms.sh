@@ -16,11 +16,7 @@ Copy media
 scp -rp kwei@10.7.2.101:/var/www/five9/shared/media_library /var/www/five9/shared
 
 Backup prodcution database
-mysqldump -ufive9 -h10.7.3.101 -pA#Hr*QtYdRFOmtN2 five9cms_production 
-> db/dumps/five9cms_production.sql
-
 Import prodcution database into webdev database
-mysql -ufive9cms -pCby[hjAfpjNhjy five9_development_20141010 -h webdevdb001.scl.five9.com < db/dumps/five9cms_production.sql
 
 
 1.   curl -L https://get.rvm.io | bash -s stable --ruby=1.9.3 (for some reason it didn't install Ruby for me in full, so I had to do the next line too)
