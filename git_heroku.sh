@@ -41,6 +41,7 @@ The solution is
 Upgrade Git version >= 1.7.10 on CentOS 6
 http://tecadmin.net/how-to-upgrade-git-version-1-7-10-on-centos-6/
 
+git clone https://username@github.com/username/repository.git
 git clone https://username:password@github.com/username/repository.git
 
 #######################################
