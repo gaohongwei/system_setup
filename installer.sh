@@ -69,3 +69,8 @@ SELECT version();
   sudo hostname your-new-name
   sudo /etc/init.d/networking restart
   relogin
+
+======================= ssh Write failed: Broken pipe =======================
+Write failed: Broken pipe
+/etc/ssh/ssh_config
+TCPKeepAlive yes
