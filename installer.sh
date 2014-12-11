@@ -74,3 +74,8 @@ SELECT version();
 Write failed: Broken pipe
 /etc/ssh/ssh_config
 TCPKeepAlive yes
+======================= ssh-copy-id Mac =======================
+ssh-keygen -t rsa -C 'kwei@five9.com'
+sudo curl https://raw.githubusercontent.com/beautifulcode/ssh-copy-id-for-OSX/master/ssh-copy-id.sh -o /usr/local/bin/ssh-copy-id
+sudo chmod +x /usr/local/bin/ssh-copy-id
+ssh-copy-id kwei@192.168.138.131
