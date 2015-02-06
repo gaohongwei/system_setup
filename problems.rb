@@ -8,3 +8,7 @@ Upgrade Git version >= 1.7.10 on CentOS 6
 http://tecadmin.net/how-to-upgrade-git-version-1-7-10-on-centos-6/
 
 git clone https://username:password@github.com/username/repository.git
+
+[root@stghttpd001 ~]# telnet github.com 443
+Trying 192.30.252.130...
+telnet: connect to address 192.30.252.130: Connection refused
