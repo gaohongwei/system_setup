@@ -55,8 +55,13 @@ git push origin --delete production_1 # delete branch
 
 #################### checkout again ####################
 git pull origin master
-#################### checkout one file ####################
+#################### checkout one file without fetch ####################
 git checkout master -- Gemfile
+#################### checkout one file with    fetch ####################
+git fetch
+git checkout origin/master -- file_path_name
+git checkout origin/master -- config/routes.rb
+
 #################### Rerun some sql ####################
 rake db:migrate:redo VERSION=20141012220250
 #################### Restart apache ####################
