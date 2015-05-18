@@ -73,9 +73,9 @@ heroku --version
 git init
 git add .
 git commit -m "first checkin"
-git remote -v
 gem install heroku
 heroku git:remote -a iask
+git remote -v
 # Remove existing one
 # git remote rm heroku
 heroku keys:add
