@@ -1,0 +1,2 @@
+Update dbcp subnet ip
+sudo view /Library/Preferences/VMware\ Fusion/networking
