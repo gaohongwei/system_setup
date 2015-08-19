@@ -96,6 +96,5 @@ Widget.select("name,id").all
 Ruby Runtime
 gem 'therubyracer', platforms: :ruby
 
-Centos
+Centos/ubuntu
 service httpd restart 
-
