@@ -15,6 +15,13 @@ Type=simple
 User=<redmine user>
 Group=<redmine group>
 ExecStart=/bin/ruby <redmine home>/script/rails s webrick -e production
+ExecStart=bundle exec sidekiq --queue elasticsearch --verbose
+Restart=on-abort
+WorkingDirectory=/www/tryme
+User=kwei
+Group=kwei
+StandardOutput=syslog
+StandardError=syslog
 
 # Give a reasonable amount of time for the server to start up/shut down
 TimeoutSec=300
