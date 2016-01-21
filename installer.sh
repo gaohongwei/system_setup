@@ -31,6 +31,10 @@ gem install heroku
 cmds="rvm install ruby -v 2.1.3"
 su  -c $cmds - www
 su  -c "$cmds" - kwei
+sudo -u www bash <<EOF
+pwd;id
+EOF
+
 
 user=www
 adduser --disabled-password --gecos "" $user
