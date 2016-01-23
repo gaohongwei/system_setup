@@ -1,2 +1,6 @@
 Update dbcp subnet ip
 sudo view /Library/Preferences/VMware\ Fusion/networking
+
+Opening terminal is too slow
+sudo rm -rf /private/var/log/asl/*.asl
+>/users/kwei/library/preferences/com.apple.terminal.plist
