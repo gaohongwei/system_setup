@@ -1,0 +1,2 @@
+
+sudo -u deploy "pwd"
