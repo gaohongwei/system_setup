@@ -10,6 +10,8 @@ sed -i '$i get "/*url" => "application/pages#show", as: :page' $fname
 
 Repalce a line
 sed -e "s/.*node.name.*/node.name:154/g" $fname
+Repalce a line inline
+sed -i.bak 's/VERSION/$(VER)/' $fname
 
 Replace with different strings
 sed -i 's/foo/bar/g; s/baz/zab/g; s/Alice/Joan/g' $fname
