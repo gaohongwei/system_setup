@@ -5,3 +5,8 @@ for pkg in $pkgs;do
 done
 #apt-get install $pkgs -y
 npm install kafka-node
+
+
+useradd kafka -m
+#passwd kafka
+adduser kafka sudo # add to sudo group
