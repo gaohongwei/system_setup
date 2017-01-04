@@ -1,0 +1,2 @@
+sudo rm -rf /private/var/log/asl/*.asl
+sudo rm -rf /var/log/asl/*.asl
