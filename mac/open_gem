@@ -1,0 +1,3 @@
+function open_me () {
+  open -a "Sublime Text" $( bundle show $1 )
+}
