@@ -1,3 +1,9 @@
 function open_gem () {
   open -a "Sublime Text" $( bundle show $1 )
 }
+
+open_gem devise
+
+or
+export EDITOR='subl -w'
+bundle open devise
