@@ -1,3 +1,12 @@
+######## Use 2nd account ########
+ssh -T git@github.com
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/gwei_rsa
+ssh -T git@github.com
+ssh-add -l
+git config user.name gwei
+git config user.email gaohongwei@gmail.com
+
 # Set user and email globally
 git init
 git config --global user.name "Gaohong Wei"
