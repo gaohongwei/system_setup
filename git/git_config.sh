@@ -18,12 +18,12 @@ $ ssh-add -l
 ######## Modify the ssh config ########
 #eval "$(ssh-agent -s)"
 $ cat ~/.ssh/config
-Host github.com-activehacker
+Host github.com
   HostName github.com
   User git
   IdentityFile ~/.ssh/id_rsa1
 
-Host github.com-jexchan
+Host github.com
   HostName github.com
   User git
   IdentityFile ~/.ssh/id_rsa2
