@@ -1,5 +1,5 @@
 ######## Use 2 accounts ########
-
+# https://gist.github.com/jexchan/2351996
 ######## Create 2 different public key ########
 $ ssh-keygen -t rsa -C "your_email@youremail.com"
 ~/.ssh/id_rsa1
@@ -27,7 +27,9 @@ Host github.com-jexchan
   HostName github.com
   User git
   IdentityFile ~/.ssh/id_rsa2
-    
+  
+######## Add pub key to git ######## 
+
 ######## Testing your SSH connection ########
 ssh -T git@github.com
 
