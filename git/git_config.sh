@@ -1,5 +1,6 @@
 ######## Use 2 accounts ########
 # https://gist.github.com/jexchan/2351996
+# https://confluence.atlassian.com/bitbucket/configure-multiple-ssh-identities-for-gitbash-mac-osx-linux-271943168.html
 ######## Create 2 different public key ########
 $ ssh-keygen -t rsa -C "xxx@gmail.com"
 ~/.ssh/id_rsa1
