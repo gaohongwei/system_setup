@@ -1,7 +1,7 @@
 ######## Use 2 accounts ########
 # https://gist.github.com/jexchan/2351996
 ######## Create 2 different public key ########
-$ ssh-keygen -t rsa -C "your_email@youremail.com"
+$ ssh-keygen -t rsa -C "xxx@gmail.com"
 ~/.ssh/id_rsa1
 ~/.ssh/id_rsa2
 
@@ -37,13 +37,13 @@ ssh -T git@github.com
 git init
 git config --global user.name "Gaohong Wei"
 git config --global user.name
-git config --global user.email "gaohongwei@gmail.com"
+git config --global user.email "xxx@gmail.com"
 git config --global user.email
 
 # Set user and email for single  project
 git init
 git config user.name "Gaohong Wei"
 git config user.name
-git config user.email "gaohongwei@gmail.com"
+git config user.email "xxx@gmail.com"
 git config user.email
 ######## .git/config ########
