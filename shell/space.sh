@@ -1,4 +1,7 @@
 
+show space for each directory
+du -sh * #mac
+
 find / -type f -size +20000k |xargs ls -al
 
 
