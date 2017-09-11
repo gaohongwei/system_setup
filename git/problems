@@ -1,0 +1,6 @@
+##### Ask for password when pushing #####
+  Password for 'http://kwei@10.100.2.59:7990'
+Use ssh instead of http
+git remote -v
+
+git remote set-url origin git@github.com:yourname/yourrepo.git
