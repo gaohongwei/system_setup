@@ -4,3 +4,6 @@ Use ssh instead of http
 git remote -v
 
 git remote set-url origin git@github.com:yourname/yourrepo.git
+
+ip/project_name
+git remote set-url origin ssh://git@ip/wd/project_name.git
