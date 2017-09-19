@@ -5,3 +5,6 @@ Have a look at .git/refs/remotes/origin/* and .git/config within your sources to
 "Origin" is the name of the remote repository where you want to publish your commits.
 By convention, the default remote repository is called "origin," 
 but you can work with several remotes (with different names) at the same time.
+
+origin is not the remote repository name. 
+It is rather a local alias for the remote repository URL.
