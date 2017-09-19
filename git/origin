@@ -1,0 +1,7 @@
+origin is the default name of the remote git repository you cloned from. 
+
+Have a look at .git/refs/remotes/origin/* and .git/config within your sources to see how git knows about it.
+
+"Origin" is the name of the remote repository where you want to publish your commits.
+By convention, the default remote repository is called "origin," 
+but you can work with several remotes (with different names) at the same time.
