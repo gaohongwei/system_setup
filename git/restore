@@ -1,7 +1,19 @@
+Delete the most recent commit, keeping the work you've done:
+git reset --soft HEAD~1
+
+Delete the most recent commit, destroying the work you've done:
+git reset --hard HEAD~1
+
+Restore files
+##### if not added
+git checkout -- path/to/folder
+##### if added
+git reset -- path/to/folder
+git checkout -- path/to/folder
+
 https://stackoverflow.com/questions/30875205/restore-a-deleted-folder-in-a-git-repo
 
 Everything you can do with a file, you can do with a folder too.
-
 
 Files are deleted from working tree but not committed yet:
 
