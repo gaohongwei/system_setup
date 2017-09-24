@@ -11,6 +11,9 @@ git checkout -- path/to/folder
 git reset -- path/to/folder
 git checkout -- path/to/folder
 
+Overwrite local files
+git pull -Xtheirs
+
 https://stackoverflow.com/questions/30875205/restore-a-deleted-folder-in-a-git-repo
 
 Everything you can do with a file, you can do with a folder too.
