@@ -14,6 +14,18 @@ git checkout -- path/to/folder
 Overwrite local files
 git pull -Xtheirs
 
+##### Remove untracked files from the working tree #####
+Step 1 is to show what will be deleted by using the -n option:
+
+git clean -n
+Clean Step - beware: this will delete files:
+
+git clean -f
+To remove directories, run git clean -f -d or git clean -fd
+To remove ignored files, run git clean -f -X or git clean -fX
+To remove ignored and non-ignored files, run git clean -f -x or git clean -fx
+
+
 https://stackoverflow.com/questions/30875205/restore-a-deleted-folder-in-a-git-repo
 
 Everything you can do with a file, you can do with a folder too.
