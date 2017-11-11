@@ -22,3 +22,10 @@ grep -rn    before_action .
        the line, or preceded by a non-word constituent character. Similarly, it
        must be either at the end of the line or followed by a non-word constituent
        character. Word-constituent characters are letters, digits, and the underscore.
+
+# Find and replace in current directory, mac
+Linux:
+grep -rl 'original_text' | xargs sed -i 's/original_text/new_text/g'
+
+Mac:
+grep -rl 'original_text' | xargs sed -i '' -e 's/original_text/new_text/g'
