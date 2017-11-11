@@ -25,7 +25,7 @@ grep -rn    before_action .
 
 # Find and replace in current directory, mac
 Linux:
-grep -rl 'original_text' | xargs sed -i 's/original_text/new_text/g'
+grep -rl 'original_text' . | xargs sed -i 's/original_text/new_text/g'
 
 Mac:
-grep -rl 'original_text' | xargs sed -i '' -e 's/original_text/new_text/g'
+grep -rl 'original_text' . | xargs sed -i '' -e 's/original_text/new_text/g'
