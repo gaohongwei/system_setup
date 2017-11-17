@@ -1,0 +1,14 @@
+vagrant box list
+# download
+vagrant box add hashicorp/precise32
+vagrant box add bento/centos-7.4
+
+# create vm
+vagrant init hashicorp/precise32
+vagrant init bento/centos-7.4
+vagrant up 
+vagrant ssh
+
+# config
+Update Vagrantfile for ip
+vagrant reload
