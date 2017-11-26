@@ -1,6 +1,7 @@
 vagrant box list
 # download
 vagrant box add hashicorp/precise32
+vagrant box add ubuntu/trusty64
 vagrant box add bento/centos-7.4
 
 # create vm
@@ -10,5 +11,11 @@ vagrant up
 vagrant ssh
 
 # config
-Update Vagrantfile for ip
-vagrant reload
+# Update Vagrantfile for ip
+# vagrant reload
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.network "private_network", ip: "192.168.10.2"
+  config.vm.synced_folder "/Users/kevin.wei/aprivate", "/home/vagrant/kwei"  
+end
+
