@@ -11,3 +11,8 @@ rails s -b 0.0.0.0
 "b" stands for "bind" 
 You'll want to make sure that the server is binded to 0.0.0.0 
 so that all interfaces can access it.
+
+
+vagrant up
+vagrant halt
+vagrant ssh
