@@ -12,7 +12,7 @@ sudo /etc/init.d/ssh restart
 
 
 export DEBIAN_FRONTEND=noninteractive
-list="openssh-server vim git mysql-server libmysqlclient-dev curl libmagick++-dev"
+list="openssh-server vim git mysql-server libmysqlclient-dev curl libmagick++-dev git"
 apt-get -y install $list
 
 # mysql
