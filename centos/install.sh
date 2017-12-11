@@ -18,3 +18,7 @@ gem install rails -v 4.1.0
 gem install bundler
 rvm gemset create rails410
 rvm gemset create office
+
+
+Install the latest Google Chrome as below:
+sudo yum install -y https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
