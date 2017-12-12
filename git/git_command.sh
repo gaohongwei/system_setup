@@ -55,3 +55,6 @@ $ git remote set-url origin git@github.com:gaohongwei/abc.git
 $ git remote -v
 origin  git@github.com:gaohongwei/abc.git (fetch)
 origin  git@github.com:gaohongwei/abc.git (push)
+
+###### Apply patch
+git apply name-of-file.patch
