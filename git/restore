@@ -1,3 +1,8 @@
+Ignore local changes and overwrite them with remote:
+  git fetch --all
+  git reset --hard origin/master
+
+
 Delete the most recent commit, keeping the work you've done:
 git reset --soft HEAD~1
 
