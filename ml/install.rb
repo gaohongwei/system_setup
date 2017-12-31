@@ -15,5 +15,7 @@ activiate ml
 # To deactivate an active environment, use:
 # > source deactivate
 
+conda list
+
 Checking
 python -c "import sklearn"
