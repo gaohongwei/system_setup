@@ -12,5 +12,6 @@ awk -F: '{ print $1, $(NF-1) }' /etc/passwd
 
 $(NF-2) seems not work
 For more coulmns, a loop can be used inside the expression
+awk '{out=""; for(i=2;i<=NF;i++){out=$out" "$i}; print $out}'
 
 https://linuxconfig.org/learning-linux-commands-awk
