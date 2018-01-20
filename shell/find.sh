@@ -1,5 +1,6 @@
-
 https://alvinalexander.com/unix/edu/examples/find.shtml
+find . -type f -empty
+find . -user kevin.wei -mtime 7 -iname ".rb"
 
 ##### find by name, type
 find . -name foo.txt
