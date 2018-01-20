@@ -1,13 +1,22 @@
 ######## install git ########
   sudo apt-get install git
-######## Create & Add ssh pub key to git ########
+######## Create ssh pub key  ########
   ssh-keygen -t rsa -C "kwei@gmail.com"
   copy key and add to git
-  /home/web/.ssh/id_rsa.pub
-
+  Copy the key
+  pbcopy < ~/.ssh/id_rsa.pub
+######## Add the SSH key to git repository ########  
+  GO a GitHub repository
+  Go to settings
+  Click 'add SSH key'
 ######## Testing your SSH connection ########
   ssh -T git@github.com
+  
+  ssh-keygen -t rsa
+  ssh-copy-id remote_host
 
+  ssh -p port_number remote_host
+  ssh remote_host command_to_run 
 ######## Set user and email globally ########
   git init
   git config --global user.name "Gaohong Wei"
