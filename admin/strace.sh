@@ -11,8 +11,6 @@ $ sudo strace df -h
 $ sudo strace -c -p pid
 -c generate a report of total time, calls, and errors for each system call
 
--i option displays the instruction pointer at the time of each system call made by the program.
-
 -t print the time of day for each line in the trace output
 
 -T shows the time difference between the starting and the end of each system call made by a program
@@ -20,9 +18,9 @@ $ sudo strace -c -p pid
 -o write the trace messages sent to standard error to a file
 $ sudo strace -o df_debug.txt df -h
 
+-i option displays the instruction pointer at the time of each system call made by the program.
 -d show debugging information for strace tool
 $ strace -d df -h
-
 
 -e trace=xxx
 Trace Only Specific System Calls
