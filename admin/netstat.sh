@@ -1,0 +1,3 @@
+-n IP 
+-r route table
+-a  all active connections
