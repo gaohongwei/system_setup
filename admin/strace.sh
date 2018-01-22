@@ -22,6 +22,10 @@ $ sudo strace -o df_debug.txt df -h
 -d show debugging information for strace tool
 $ strace -d df -h
 
+strace -e open ls
+strace -e open -t ls
+strace -e trace=open ls
+
 -e trace=xxx
 Trace Only Specific System Calls
 xxx signal, abbrev, verbose, raw, read, or write
