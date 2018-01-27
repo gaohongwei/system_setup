@@ -1,5 +1,18 @@
 ##### Install pg for heroku #####
 sudo apt-get install postgresql postgresql-contrib  libpq-dev
+
+##### Database config #####
+  group :development, :test do
+    gem 'sqlite3'
+    gem 'mysql2'  
+  end
+
+  group :production do
+    gem 'pg', '~> 0.21'
+    gem 'rails_12factor'
+  end
+
+  bundle install --without production
 ##### Install heroku #####
   gem install heroku
   heroku --version
@@ -50,3 +63,8 @@ then commit and push
 sudo service httpd restart
 sudo a2enmod passenger
 sudo service apache2 restart
+
+##### Push error ##### 
+Gem::LoadError: cant activate pg (~> 0.18), 
+already activated pg-1.0.0. 
+Make sure all dependencies are added to Gemfile.
