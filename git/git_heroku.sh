@@ -1,3 +1,5 @@
+##### Install pg for heroku #####
+sudo apt-get install postgresql postgresql-contrib  libpq-dev
 ##### Install heroku #####
   gem install heroku
   heroku --version
