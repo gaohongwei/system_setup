@@ -37,7 +37,12 @@ sudo apt-get install postgresql postgresql-contrib  libpq-dev
   heroku run rake db:migrate
   heroku run rake db:seed
   heroku restart
-
+  heroku ps:scale web=1
+#####  Rails log #####
+  heroku logs
+#####  Database #####
+  heroku run rails console
+  heroku pg:reset TCM_productionheroku restart
 #####  Rerun some sql #####
 rake db:migrate:redo VERSION=20141012220250
 
@@ -47,12 +52,6 @@ db/migrate might have been loaded multiple times
 You need drop it
   git rm db/migrate
 then commit and push
-
-#####  Rails log #####
-  heroku run rails console
-  heroku logs
-  heroku ps:scale web=1
-  heroku pg:reset TCM_productionheroku restart
 
 ##### clone code from heroku
   heroku git:clone -a myapp
