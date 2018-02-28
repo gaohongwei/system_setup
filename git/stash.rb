@@ -1,3 +1,4 @@
+git stash save "my stash name"
 git stash
 
 git stash list
