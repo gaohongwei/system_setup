@@ -5,17 +5,40 @@ vagrant box add ubuntu/trusty64
 vagrant box add bento/centos-7.4
 
 # create vm
-vagrant init hashicorp/precise32
-vagrant init bento/centos-7.4
-vagrant up 
-vagrant ssh
+  vagrant init hashicorp/precise32
+  vagrant init bento/centos-7.4
+  vagrant up 
+  vagrant ssh
 
-# config
+# Manage
+  vagrant up 
+  vagrant ssh
+  vagrant suspend
+  vagrant reload
+
+# Connect
+  ssh-copy-id -p 2222 web@localhost
+  ssh -p 2222 web@localhost
+  ssh -p '2222' 'web@localhost'
+
+# Real config
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 2048
+  end
+  #config.ssh.username = "web"
+  #onfig.ssh.username = "password"
+  #onfig.vm.network :private_network, ip: "192.168.10.10"
+  config.vm.network :forwarded_port, guest: 9000, host: 9000, host_ip: "localhost"
+  config.vm.synced_folder "/Users/kevin.wei/aprivate", "/home/web/aprivate"
+end
+
+
+# inital config 
 # Update Vagrantfile for ip
-# vagrant reload
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.network "private_network", ip: "192.168.10.2"
   config.vm.synced_folder "/Users/kevin.wei/aprivate", "/home/vagrant/kwei"  
 end
-
