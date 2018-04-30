@@ -73,3 +73,11 @@ sudo service apache2 restart
 Gem::LoadError: cant activate pg (~> 0.18), 
 already activated pg-1.0.0. 
 Make sure all dependencies are added to Gemfile.
+
+Uglifier::Error: Unexpected token: operator (>). 
+To use ES6 syntax, harmony mode must be enabled with Uglifier.new(:harmony => true).
+  Try replacing
+  config.assets.js_compressor = :uglifier
+  with
+  config.assets.js_compressor = Uglifier.new(harmony: true)
+  in config/environments/production.rb
