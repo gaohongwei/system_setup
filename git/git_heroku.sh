@@ -22,6 +22,12 @@ sudo apt-get install postgresql postgresql-contrib  libpq-dev
   # It will ask for user and password
 
 ##### heroku check in
+  update code
+    update gem
+      add pg  in production
+    update database.yml
+  bundle install
+  
   git remote -v
   git init
   git add .
