@@ -93,3 +93,8 @@ React
    11 | )
    12 | 
    13 | Hello.defaultProps = {
+Assigning variables in a class is not standard ES6, 
+it is https://babeljs.io/docs/plugins/transform-class-properties/ 
+so you would need to install and enable 
+babel-plugin-transform-class-properties 
+or install one of the presets that include that experimental syntax.
