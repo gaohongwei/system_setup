@@ -111,3 +111,7 @@ To use ES6 syntax, harmony mode must be enabled with Uglifier.new(:harmony => tr
   config.assets.js_compressor = Uglifier.new(harmony: true)
 
   RAILS_ENV=production rake assets:precompile --trace
+
+Uglifier is not available in production at run-time, 
+only at asset precompilation-time (hence being in the `assets` group).
+  config.assets.js_compressor = Uglifier.new(mangle: false) if defined? Uglifier
