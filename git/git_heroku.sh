@@ -82,7 +82,7 @@ To use ES6 syntax, harmony mode must be enabled with Uglifier.new(:harmony => tr
   config.assets.js_compressor = Uglifier.new(harmony: true)
   in config/environments/production.rb
 
-React
+  React
   ERROR in ./app/javascript/packs/hello_react.jsx
   Module build failed: SyntaxError: Unexpected token (10:2)
 
@@ -93,8 +93,10 @@ React
    11 | )
    12 | 
    13 | Hello.defaultProps = {
-Assigning variables in a class is not standard ES6, 
-it is https://babeljs.io/docs/plugins/transform-class-properties/ 
-so you would need to install and enable 
-babel-plugin-transform-class-properties 
-or install one of the presets that include that experimental syntax.
+  Assigning variables in a class is not standard ES6, 
+  it is https://babeljs.io/docs/plugins/transform-class-properties/ 
+  so you would need to install and enable 
+  babel-plugin-transform-class-properties 
+  or install one of the presets that include that experimental syntax.
+
+  NameError: uninitialized constant Uglifier
