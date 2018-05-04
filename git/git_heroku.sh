@@ -40,11 +40,14 @@ sudo apt-get install postgresql postgresql-contrib  libpq-dev
   heroku keys:add
   heroku keys:add ~/.ssh/id_rsa.pub
 ##### Tasks
-  heroku run rake db:reset
+  heroku pg:reset
   heroku run rake db:migrate
-  heroku run rake db:seed
+  heroku run rake db:load_data_file
   heroku restart
-  heroku ps:scale web=1
+  heroku logs
+#   heroku run rake db:reset
+#   heroku run rake db:seed
+#   heroku ps:scale web=1
 #####  Rails log #####
   heroku logs
 #####  Database #####
