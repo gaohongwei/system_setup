@@ -98,5 +98,9 @@ To use ES6 syntax, harmony mode must be enabled with Uglifier.new(:harmony => tr
   so you would need to install and enable 
   babel-plugin-transform-class-properties 
   or install one of the presets that include that experimental syntax.
+  .babelrc
+    {
+      "plugins": ["transform-class-properties"]
+    }
 
   NameError: uninitialized constant Uglifier
