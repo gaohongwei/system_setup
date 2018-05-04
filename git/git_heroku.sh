@@ -107,4 +107,7 @@ To use ES6 syntax, harmony mode must be enabled with Uglifier.new(:harmony => tr
   NameError: uninitialized constant Uglifier
   NameError: uninitialized constant Uglifier
   /app/config/environments/production.rb
+  reproduce the issue locally  
   config.assets.js_compressor = Uglifier.new(harmony: true)
+
+  RAILS_ENV=production rake assets:precompile --trace
