@@ -81,3 +81,15 @@ To use ES6 syntax, harmony mode must be enabled with Uglifier.new(:harmony => tr
   with
   config.assets.js_compressor = Uglifier.new(harmony: true)
   in config/environments/production.rb
+
+React
+  ERROR in ./app/javascript/packs/hello_react.jsx
+  Module build failed: SyntaxError: Unexpected token (10:2)
+
+    8 | 
+    9 | const Hello = props => (
+  > 10 |   <div>Hello {props.name}!</div>
+      |   ^
+   11 | )
+   12 | 
+   13 | Hello.defaultProps = {
