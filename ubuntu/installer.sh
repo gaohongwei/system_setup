@@ -48,12 +48,17 @@ gem install rmagick
 #postgres
 list="postgresql postgresql-contrib libpq-dev"
 apt-get -y install $list
+update-rc.d postgresql enable # for reboot
+service postgresql start # start
 sudo su postgres -c  "createuser root --pwprompt"  
 sudo -u postgres dropdb   $dbname
 sudo -u postgres createdb $dbname
 
 
 #postgresql 
+ su - postgres
+ psql
+
  /etc/init.d/postgresql status
  psql -l
  psql TCM_production
