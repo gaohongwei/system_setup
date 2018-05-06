@@ -50,6 +50,9 @@ sudo apt-get install postgresql postgresql-contrib  libpq-dev
 #   heroku ps:scale web=1
 #####  Rails log #####
   heroku logs
+  heroku logs
+  heroku logs --tail
+  heroku logs -n 500  
 #####  Database #####
   heroku run rails console
   heroku pg:reset TCM_productionheroku restart
