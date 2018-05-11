@@ -19,3 +19,6 @@ conda list
 
 Checking
 python -c "import sklearn"
+
+#####
+sudo pip install scikit-learn
