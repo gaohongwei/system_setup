@@ -121,5 +121,5 @@ To use ES6 syntax, harmony mode must be enabled with Uglifier.new(:harmony => tr
 Uglifier is not available in production at run-time, 
 only at asset precompilation-time (hence being in the `assets` group).
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = Uglifier.new(harmony: true) if Uglifier
+  config.assets.js_compressor = Uglifier.new(harmony: true) if defined? Uglifier  
   #onfig.assets.js_compressor = Uglifier.new(mangle: false) if defined? Uglifier  
