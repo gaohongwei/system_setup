@@ -25,17 +25,16 @@ alias sync_me="scp -rp $source/* ~/creator;scp -rp ${source}_work/* ~/creator"
 alias rs="bundle exec thin start -p 3001 --ssl"
 
 # git command
+alias gls='git branch'
 alias gst='git status'
-alias glog="git log --abbrev-commit --decorate --date=relative --format=format:'\''%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'\'''"
+alias gpush='function _gpush(){ git push origin $1;};_gpush'
+alias fpush='function _fpush(){ git push -f origin $1;};_fpush'
 alias gco='function _gco(){ git checkout $1;};_gco'
 alias gcodev="git checkout development"
 
+alias glog="git log --abbrev-commit --decorate --date=relative --format=format:'\''%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'\'''"
 alias gnew='function _gnew(){ git checkout -b $1;};_gnew'
 #Created & Switched to a new branch 'KR-1963-RemoveLogo'
-
-alias gpush='function _gpush(){ git push origin $1;};_gpush'
-alias fpush='function _fpush(){ git push -f origin $1;};_fpush'
-alias gls='git branch'
 
 alias be='function _be(){ bundle exec $1;};_be'
 alias be_rake='bundle exec rake'
