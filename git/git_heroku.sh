@@ -66,6 +66,8 @@ You need drop it
   git rm db/migrate
 then commit and push
 
+heroku run console
+
 ##### clone code from heroku
   heroku git:clone -a myapp
 ##### Remove existing one
