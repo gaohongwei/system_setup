@@ -1,0 +1,4 @@
+# vagrant box list
+# vagrant init ubuntu/trusty64 
+# vagrant reload
+# vagrant ssh, first login
