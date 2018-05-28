@@ -2,3 +2,4 @@
 # vagrant init ubuntu/trusty64 
 # vagrant reload
 # vagrant ssh, first login
+# ssh -p '2222' 'web@localhost'
