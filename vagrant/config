@@ -3,3 +3,4 @@
 # vagrant reload
 # vagrant ssh, first login
 # ssh -p '2222' 'web@localhost'
+# ssh-copy-id -p 2222 web@localhost
