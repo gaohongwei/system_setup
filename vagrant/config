@@ -1,5 +1,9 @@
+# vagrant version
 # vagrant box list
 # vagrant init ubuntu/trusty64 
+# vagrant port
+# vagrant up
+# vagrant ssh
 # vagrant reload
 # vagrant ssh, first login
 # ssh -p '2222' 'web@localhost'
