@@ -5,11 +5,15 @@ vagrant list
 # Create Vagrantfile
 vagrant init hashicorp/precise64
 
-vagrant up
+
+vagrant box add bento/ubuntu-16.04
+vagrant box add bento/ubuntu-17.10
 vagrant box add hashicorp/precise64
 vagrant box add ubuntu/trusty64
 vagrant up
 vagrant list
+vagrant box remove -f hashicorp/precise64
+vagrant box remove -f ubuntu/trusty64
 
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
