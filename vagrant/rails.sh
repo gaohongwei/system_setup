@@ -29,6 +29,7 @@ rails s -b 0.0.0.0
 You'll want to make sure that the server is binded to 0.0.0.0 
 so that all interfaces can access it.
 
+alias rs="rails s -b 0.0.0.0 -p 9000"
 
 vagrant up
 vagrant halt
