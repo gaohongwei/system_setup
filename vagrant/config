@@ -7,7 +7,7 @@
 # vagrant ssh
 # lsb_release -a
 
-# vagrant box remove -f bento/ubuntu-17.10
+# vagrant box remove -f bento/ubuntu-18.04
 # vagrant port
 # vagrant reload
 # vagrant ssh, first login
