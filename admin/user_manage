@@ -2,8 +2,9 @@ Create
   useradd -m user1
   useradd --create-home -m user1
   useradd --create-home --shell /bin/bash -m user2
+  useradd -s /bin/bash -m $username
 
-  useradd -m  -s /bin/bash -G sudo user3
+  useradd -s /bin/bash -m   -G sudo user3
 
   useradd --create-home --shell /bin/bash --user-group user2
 
