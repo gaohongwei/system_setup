@@ -9,3 +9,7 @@ Create
 
   adduser --system --shell /bin/bash --group --home $home  user2
   useradd --create-home --shell /bin/bash --user-group user2
+Add to group
+  usermod -aG sudo  user1
+Delete
+  deluser user1
