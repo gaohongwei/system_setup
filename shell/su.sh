@@ -1,3 +1,5 @@
-
+#sudo -u deploy "pwd"
 su  -c "$CMD" - username
-sudo -u deploy "pwd"
+su - $username <<'EOF'
+
+EOF
