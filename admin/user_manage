@@ -1,0 +1,11 @@
+Create
+  useradd -m user1
+  useradd --create-home -m user1
+  useradd --create-home --shell /bin/bash -m user2
+
+  useradd -m  -s /bin/bash -G sudo user3
+
+  useradd --create-home --shell /bin/bash --user-group user2
+
+  adduser --system --shell /bin/bash --group --home $home  user2
+  useradd --create-home --shell /bin/bash --user-group user2
