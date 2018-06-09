@@ -13,8 +13,8 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 9000, host: 9000, auto_correct: true
   config.vm.network "forwarded_port", guest: 22,   host: 2222, auto_correct: true
      
-  config.vm.synced_folder "/Users/kwei/code", "/home/web/code"
-  config.vm.synced_folder "/Users/kwei/atry", "/home/web/atry"  
+  config.vm.synced_folder "/Users/kwei/code", "/home/web/code", owner: "web", group: 'web'
+  config.vm.synced_folder "/Users/kwei/atry", "/home/web/atry", owner: "web", group: 'web'
 end
 
 #ssh-copy-id -p 2222 web@localhost
