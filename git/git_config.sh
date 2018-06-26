@@ -5,6 +5,7 @@
   copy key and add to git
   Copy the key
   pbcopy < ~/.ssh/id_rsa.pub
+  cat ~/.ssh/id_rsa.pub
 ######## Add the SSH key to git repository ########  
   GO a GitHub repository
   Go to settings
