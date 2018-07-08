@@ -10,6 +10,8 @@ Used as the default init replacement on Ubuntu, Upstart is very good at starting
 
 systemd
 used as the default init on a fair number of Linuxes, most notably the Redhat/Fedora family of distributions.
+davidwessman/Systemd for Sidekiq
+https://gist.github.com/davidwessman/4f236af00981da967088d087f232b79b
 
 Supervisord 
 convenient to set up, and seems to get a fair amount of use in Pythonland. 
