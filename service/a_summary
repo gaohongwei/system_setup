@@ -1,5 +1,8 @@
 Upstart systemd Supervisord
 
+Systemd, default from Ubuntu 15.04 
+Upstart, before Ubuntu 14.10
+
 Upstart
 Used as the default init replacement on Ubuntu, Upstart is very good at starting things up. 
 
