@@ -30,5 +30,7 @@ systemctl start|stop|enable|disable service-name
 # service
   service --status-all
 
-sudo update-rc.d apache2 disable
-sudo update-rc.d apache2 enable
+update-rc.d, add or remove a service
+  sudo update-rc.d apache2 disable
+  sudo update-rc.d apache2 enable
+  systemctl can do it also by enable/disable
