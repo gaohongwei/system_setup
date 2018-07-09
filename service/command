@@ -1,3 +1,6 @@
+# after create a new service file
+systemctl daemon-reload
+
 systemctl start sidekiq.service
 systemctl start application
 systemctl stop sidekiq.service
