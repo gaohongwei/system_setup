@@ -29,7 +29,8 @@ alias sync_me='scp -rp $source   $remote:/www/tools;scp -rp ${source}_work/* $re
 alias sync_me="scp -rp $source/* ~/creator;scp -rp ${source}_work/* ~/creator"
 
 alias rs="bundle exec thin start -p 3001 --ssl"
-alias 'rs=rails s -p 9000'
+alias rs="rails s -p 9000"
+alias rs="rails s -b 0.0.0.0 -p 9000"
 
 # git command
 alias gls='git branch'
