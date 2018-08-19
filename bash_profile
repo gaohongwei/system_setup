@@ -16,6 +16,12 @@ alias es_stop ='launchctl stop homebrew.mxcl.elasticsearch'
 alias es_start='launchctl start homebrew.mxcl.elasticsearch'
 alias es_restart='launchctl restart homebrew.mxcl.elasticsearch'
 
+#### sync locally
+source=~/atry/base
+dest=~/tools/creator
+alias copy_me='cp -rp ${source}/* $dest;cp -rp ${source}_work/* $dest;sh $dest/redo.sh'
+alias sync_me='rsync -vrazh ${source}/* $dest;rsync -vrazh ${source}_work/* $dest;sh $dest/redo.sh'
+
 #### sync
 remote=kwei@192.168.1.19
 source=~/common/doit/base
