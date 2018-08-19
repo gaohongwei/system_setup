@@ -22,13 +22,14 @@ dest=~/tools/creator
 alias copy_me='cp -rp ${source}/* $dest;cp -rp ${source}_work/* $dest;sh $dest/redo.sh'
 alias sync_me='rsync -vrazh ${source}/* $dest;rsync -vrazh ${source}_work/* $dest;sh $dest/redo.sh'
 
-#### sync
+#### sync remote
 remote=kwei@192.168.1.19
 source=~/common/doit/base
 alias sync_me='scp -rp $source   $remote:/www/tools;scp -rp ${source}_work/* $remote:/www/tools'
 alias sync_me="scp -rp $source/* ~/creator;scp -rp ${source}_work/* ~/creator"
 
 alias rs="bundle exec thin start -p 3001 --ssl"
+alias 'rs=rails s -p 9000'
 
 # git command
 alias gls='git branch'
