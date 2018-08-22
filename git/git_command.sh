@@ -1,3 +1,5 @@
+###### Rebase ######
+git rebase -i HEAD~2
 ###### Apply patch ######
 git apply name-of-file.patch
 
