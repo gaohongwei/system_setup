@@ -27,3 +27,4 @@ sed -i 's/STRING_TO_REPLACE/STRING_TO_REPLACE_IT/g' filename
 sed -i '' 's/STRING_TO_REPLACE/STRING_TO_REPLACE_IT/g' filename
 
 find . -type f -iname '*.py' -exec sed -i 's/plt.savefig(zplot)/plt.savefig("zplot")/g' "{}" +;
+find . -type f -iname '*.py' -exec sed -i 's/plt.show()/plt.savefig("zplot")/g' "{}" +;
