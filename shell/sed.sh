@@ -19,3 +19,6 @@ sed -i 's/foo/bar/g; s/baz/zab/g; s/Alice/Joan/g' $fname
 Multiple repalce and pattern
 sed  -e "s|[ \t]*\([a-zA-Z0-9]*\).*integer.*|\1:integer|g" \
      -e "s|[ \t]*\([a-zA-Z0-9]*\).*varchar.*|\1:string|g"  b.txt
+
+Replace in folders
+find . -type f -iname '*.py' -exec sed -i.bak 's/plt.show()/plt.savefig('zplot')/' "{}" +;
