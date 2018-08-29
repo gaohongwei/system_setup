@@ -21,4 +21,9 @@ sed  -e "s|[ \t]*\([a-zA-Z0-9]*\).*integer.*|\1:integer|g" \
      -e "s|[ \t]*\([a-zA-Z0-9]*\).*varchar.*|\1:string|g"  b.txt
 
 Replace in folders
-find . -type f -iname '*.py' -exec sed -i.bak 's/plt.show()/plt.savefig('zplot')/' "{}" +;
+# ubuntu
+sed -i 's/STRING_TO_REPLACE/STRING_TO_REPLACE_IT/g' filename
+# mac
+sed -i '' 's/STRING_TO_REPLACE/STRING_TO_REPLACE_IT/g' filename
+
+find . -type f -iname '*.py' -exec sed -i 's/plt.savefig(zplot)/plt.savefig("zplot")/g' "{}" +;
