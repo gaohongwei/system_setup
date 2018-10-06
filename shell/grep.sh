@@ -23,6 +23,10 @@ grep -rn    before_action .
        must be either at the end of the line or followed by a non-word constituent
        character. Word-constituent characters are letters, digits, and the underscore.
 
+# Find by pattern
+   grep -rl 'def ' . | xargs grep def
+   find . -name *.rb | xargs grep def
+
 # Find and replace in current directory, mac
 Linux:
 grep -rl 'original_text' . | xargs sed -i 's/original_text/new_text/g'
