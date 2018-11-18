@@ -1,20 +1,15 @@
-# Add/remove service
-  update-rc.d, add or remove a service
-    update-rc.d apache2 disable
-    update-rc.d apache2 enable
-  systemctl
-    systemctl enable  apache2
-    systemctl disable apache2  
-# Start/stop 
-  service apache2 start|stop
-  systemctl start|stop apache2
 # list all service
   service --status-all
-  
+
+# Create file
+  touch /etc/systemd/system/mlweb.service
+  chmod 644 /etc/systemd/system/mlweb.service
   
 # after create a new service file
   systemctl start|stop|restart|status|enable|disable service-name
   service service-name {start|stop|restart|status}
+  
+  debug
   journalctl -xn
 
   systemctl daemon-reload
@@ -48,3 +43,8 @@
   systemctl halt
   systemctl poweroff
   systemctl reboot
+  
+# Add/remove service
+  update-rc.d, add or remove a service
+    update-rc.d apache2 disable
+    update-rc.d apache2 enable
