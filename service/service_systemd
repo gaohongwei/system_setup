@@ -1,36 +1,40 @@
-Ubuntu 15.04 or up
-/lib/systemd/system/foo.service
-/lib/systemd/system/listdir.service
+For Ubuntu 15.04 or up
 
+Create service file
+  # /lib/systemd/system/foo.service
+  # /lib/systemd/system/listdir.service
+  touch /etc/systemd/system/mlweb.service
+  chmod 644 /etc/systemd/system/mlweb.service
+  
 Enable the service:
-systemctl enable foo.service
-systemctl start foo.service
+  systemctl enable foo.service
+  systemctl start foo.service
 
-##############
-[Unit]
-Description=Redmine server
-After=syslog.target
-After=network.target
+############## content
+  [Unit]
+  Description=Redmine server
+  After=syslog.target
+  After=network.target
 
-[Service]
-Type=simple
-Type=oneshot
-User=<redmine user>
-Group=<redmine group>
-ExecStart=/bin/ruby <redmine home>/script/rails s webrick -e production
-ExecStart=bundle exec sidekiq --queue elasticsearch --verbose
-ExecStart=/usr/lib/systemd/scripts/custom-start.sh
-ExecStop=/usr/lib/systemd/scripts/custom-shutdown.sh
-WorkingDirectory=/www/tryme
-User=kwei
-Group=kwei
-StandardOutput=syslog
-StandardError=syslog
-Restart=on-abort
-RemainAfterExit=yes
+  [Service]
+  Type=simple
+  Type=oneshot
+  User=<redmine user>
+  Group=<redmine group>
+  ExecStart=/bin/ruby <redmine home>/script/rails s webrick -e production
+  ExecStart=bundle exec sidekiq --queue elasticsearch --verbose
+  ExecStart=/usr/lib/systemd/scripts/custom-start.sh
+  ExecStop=/usr/lib/systemd/scripts/custom-shutdown.sh
+  WorkingDirectory=/www/tryme
+  User=kwei
+  Group=kwei
+  StandardOutput=syslog
+  StandardError=syslog
+  Restart=on-abort
+  RemainAfterExit=yes
 
-# Give a reasonable amount of time for the server to start up/shut down
-TimeoutSec=300
+  # Give a reasonable amount of time for the server to start up/shut down
+  TimeoutSec=300
 
-[Install]
-WantedBy=multi-user.target
+  [Install]
+  WantedBy=multi-user.target
