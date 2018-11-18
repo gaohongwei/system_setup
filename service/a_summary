@@ -1,17 +1,19 @@
-Upstart systemd Supervisord
+Ways:
+  Upstart systemd Supervisord
+  Upstart, old, before Ubuntu 14.10
+  Systemd, new, default from Ubuntu 15.04 
+  
+systemd, new way
+  used as the default init on a fair number of Linuxes, 
+  most notably the Redhat/Fedora family of distributions.
+  davidwessman/Systemd for Sidekiq
+  https://gist.github.com/davidwessman/4f236af00981da967088d087f232b79b
 
-Systemd, default from Ubuntu 15.04 
-Upstart, before Ubuntu 14.10
+Old ways:
+  Upstart
+    Used as the default init replacement on Ubuntu, Upstart is very good at starting things up. 
 
-Upstart
-Used as the default init replacement on Ubuntu, Upstart is very good at starting things up. 
-
-systemd
-used as the default init on a fair number of Linuxes, most notably the Redhat/Fedora family of distributions.
-davidwessman/Systemd for Sidekiq
-https://gist.github.com/davidwessman/4f236af00981da967088d087f232b79b
-
-Supervisord 
-convenient to set up, and seems to get a fair amount of use in Pythonland. 
-Its main advantage over Upstart, Runit, and systemd is that Supervisord can easily start pools of several instances of a program. 
-This is useful if you want a pool of worker processes, e.g. as FastCGI workers. 
+  Supervisord 
+    convenient to set up, and seems to get a fair amount of use in Pythonland. 
+    Its main advantage over Upstart, Runit, and systemd is that Supervisord can easily start pools of several instances of a program. 
+    This is useful if you want a pool of worker processes, e.g. as FastCGI workers. 
