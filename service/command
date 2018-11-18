@@ -13,30 +13,38 @@
   
   
 # after create a new service file
-systemctl daemon-reload
+  systemctl start|stop|restart|status|enable|disable service-name
+  service service-name {start|stop|restart|status}
+  journalctl -xn
 
-systemctl start sidekiq.service
-systemctl start application
-systemctl stop sidekiq.service
-systemctl restart sidekiq.service
-systemctl reload sidekiq.service
-systemctl reload-or-restart sidekiq.service
+  systemctl daemon-reload
+  
+  systemctl start sidekiq.service
+  systemctl start application
+  systemctl stop sidekiq.service
+  systemctl restart sidekiq.service
+  systemctl reload sidekiq.service
+  systemctl reload-or-restart sidekiq.service
+  
+  Completely delete a service:
+  systemctl stop [servicename]
+  systemctl disable [servicename]
+  systemctl daemon-reload
+  systemctl reset-failed  
 
-systemctl cat sidekiq.service
+  systemctl cat sidekiq.service
 
-systemctl enable sidekiq.service
-systemctl disable sidekiq.service
-systemctl mask sidekiq.service
-systemctl start sidekiq.service
-systemctl unmask sidekiq.service
-systemctl edit sidekiq.service
-systemctl edit --full sidekiq.service
-systemctl daemon-reload
-systemctl set-default graphical.target
-systemctl isolate multi-user.target
-systemctl rescue
-systemctl halt
-systemctl poweroff
-systemctl reboot
-
-systemctl start|stop|enable|disable service-name
+  systemctl enable sidekiq.service
+  systemctl disable sidekiq.service
+  systemctl mask sidekiq.service
+  systemctl start sidekiq.service
+  systemctl unmask sidekiq.service
+  systemctl edit sidekiq.service
+  systemctl edit --full sidekiq.service
+  systemctl daemon-reload
+  systemctl set-default graphical.target
+  systemctl isolate multi-user.target
+  systemctl rescue
+  systemctl halt
+  systemctl poweroff
+  systemctl reboot
