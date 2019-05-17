@@ -1,15 +1,33 @@
-# vagrant version
-# vagrant box list
-# vagrant init ubuntu/trusty64 
-# vagrant init    bento/ubuntu-18.04
-# vagrant box add bento/ubuntu-18.04
-# vagrant up
-# vagrant ssh
-# lsb_release -a
 
-# vagrant box remove -f bento/ubuntu-18.04
-# vagrant port
-# vagrant reload
-# vagrant ssh, first login
-# ssh -p '2222' 'web@localhost'
-# ssh-copy-id -p 2222 web@localhost
+ 
+ Install virtualbox
+    brew cask info virtualbox
+    brew cask install virtualbox
+    
+    In case it failed, download the package and install it
+      sudo spctl --master-disable
+      sudo spctl --master-enable
+Install vagrant
+    brew cask install vagrant
+    brew cask install vagrant-manager
+Create VM
+    vagrant version
+    vagrant box list
+    vagrant init ubuntu/trusty64 
+    vagrant init    bento/ubuntu-18.04
+    vagrant box add bento/ubuntu-18.04
+    vagrant up
+    vagrant ssh
+
+
+
+Use VM
+  vagrant box remove -f bento/ubuntu-18.04
+  vagrant port
+  vagrant reload
+  vagrant ssh, first login
+  ssh -p '2222' 'web@localhost'
+  ssh-copy-id -p 2222 web@localhost
+
+Check Ubuntu VM
+  lsb_release -a
