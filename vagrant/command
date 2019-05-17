@@ -4,6 +4,8 @@
     brew cask info virtualbox
     brew cask install virtualbox
     
+    vboxmanage --version
+    
     In case it failed, download the package and install it
       sudo spctl --master-disable
       sudo spctl --master-enable
