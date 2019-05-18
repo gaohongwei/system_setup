@@ -21,7 +21,11 @@ Create VM
     vagrant up
     vagrant ssh
 
-
+Snapshot
+  vagrant snapshot list
+  vagrant snapshot save initial_install
+  vagrant snapshot restore initial_install
+  vagrant snapshot delete initial_install
 
 Use VM
   vagrant box remove -f bento/ubuntu-18.04
