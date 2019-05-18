@@ -22,10 +22,11 @@ Create VM
     vagrant ssh
 
 Snapshot
+  sname=install_pkgs
   vagrant snapshot list
-  vagrant snapshot save initial_install
-  vagrant snapshot restore initial_install
-  vagrant snapshot delete initial_install
+  vagrant snapshot save $sname
+  vagrant snapshot restore $sname
+  vagrant snapshot delete $sname
 
 Use VM
   vagrant box remove -f bento/ubuntu-18.04
