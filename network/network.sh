@@ -16,3 +16,6 @@
   scp ~/.ssh/id_rsa.pub user@remote.example.com:/tmp/id_rsa.pub
   ssh user@remote.example.com 
   cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys
+
+# find the process using a port
+sudo lsof -i:8000
