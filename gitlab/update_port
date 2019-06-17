@@ -1,0 +1,6 @@
+
+/opt/gitlab/embedded/service/gitlab-rails/config/gitlab.yml
+/opt/gitlab/embedded/conf/nginx.conf
+sudo gitlab-ctl restart
+sudo view /etc/gitlab/gitlab.rb
+sudo gitlab-ctl reconfigure
