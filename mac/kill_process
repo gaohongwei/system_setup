@@ -1,0 +1,19 @@
+3. Pkill Command – 
+Send signal to the process based on its name
+You can send signal to any process by specifying the full name or partial name. 
+
+$ pgrep -l sample
+12406 sample-server.p
+12425 sample-server.p
+12430 sample-garbagec
+
+
+
+Example: Send SIGTERM to all the process which has sample in its name.
+$ pkill -USR1 sample
+
+$ pkill sample
+Pkill Example:
+Before sending signal, you can verify which are all the process is matching the criteria using “pgrep -l”, which displays the process ID and process name of the matching processes.
+
+In this example, all the processes are designed to log the signal to signal-log, along with its PID.
