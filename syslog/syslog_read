@@ -1,0 +1,7 @@
+Syslog
+  myapp=ml_train
+  sudo journalctl --unit=$myapp
+
+  sudo journalctl --unit=$myapp --since today
+  sudo journalctl --unit=ml_train --since -10d
+  sudo journalctl --unit=ml_train --since -30d -o json-pretty
