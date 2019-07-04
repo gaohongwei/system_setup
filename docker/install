@@ -1,0 +1,24 @@
+Install docker
+  sudo apt-get update
+  sudo apt-get remove docker docker-engine docker.io
+  sudo apt install -y docker.io
+
+  sudo systemctl start docker
+  sudo systemctl enable docker
+
+  docker --version
+Build
+  # build from the current directory 
+  sudo docker build . -t rails-chat-tutorial
+Run
+  sudo docker run -i -t rails-chat-tutorial
+  
+Image List
+  sudo docker image list
+  sudo docker image  rm  fce289e99eb9 -f
+
+Save image to tar and load
+  sudo docker save -o /tmp/a.tar demo
+  sudo docker save demo > /tmp/b.tar
+
+  docker load -i /tmp/a.tar 
