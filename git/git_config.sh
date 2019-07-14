@@ -20,10 +20,12 @@
   ssh remote_host command_to_run 
 ######## Set user and email globally ########
   git init
+  git config --global core.editor "vim"
   git config --global user.name "Gaohong Wei"
   git config --global user.name
   git config --global user.email "xxx@gmail.com"
   git config --global user.email
+
 
   # Set user and email for single  project
   git init
