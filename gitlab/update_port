@@ -1,4 +1,10 @@
 
+Maintain
+  /etc/gitlab/gitlab.rb
+    external_url 'https://yourdomain'
+  sudo gitlab-ctl reconfigure
+  sudo gitlab-ctl stop
+
 /opt/gitlab/embedded/service/gitlab-rails/config/gitlab.yml
 /opt/gitlab/embedded/conf/nginx.conf
 sudo gitlab-ctl restart
