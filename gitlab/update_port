@@ -10,3 +10,11 @@ Maintain
 sudo gitlab-ctl restart
 sudo view /etc/gitlab/gitlab.rb
 sudo gitlab-ctl reconfigure
+
+Start all GitLab components:
+Stop all GitLab components:
+Restart all GitLab components:
+
+sudo gitlab-ctl start
+sudo gitlab-ctl stop
+sudo gitlab-ctl restart
