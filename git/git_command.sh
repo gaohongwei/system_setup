@@ -1,3 +1,5 @@
+###### update description ######
+git commit --amend
 ###### Rebase ######
 git rebase -i HEAD~2
 ###### Apply patch ######
