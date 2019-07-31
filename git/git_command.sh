@@ -38,8 +38,6 @@ git log -U1 --word-diff
 git log --stat
 git log --pretty=oneline
 ######
-git reset  # Untag all files
-git reset HEAD file1 # unstage
 git remote -v
 git remote add origin https://github.com/gaohongwei/shell_script.git
 git push -u origin master
@@ -47,15 +45,3 @@ git push -u origin master
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
   (use "git reset HEAD <file>..." to unstage)
-
-Undo a commit and redo
-
-$ git commit ...              (1)
-$ git reset --soft HEAD~1     (2)
-$ edit                        (3)
-$ git add ....                (4)
-$ git commit -c ORIG_HEAD     (5)
-####
-git reset --soft HEAD~3
-git rm -rf directory
-git add directoryname
