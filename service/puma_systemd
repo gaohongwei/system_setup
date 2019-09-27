@@ -1,0 +1,17 @@
+# https://gist.github.com/arteezy/5d53d99f6ee617fae1f0db0576fdd418
+
+[Unit]
+Description=Puma Rails Server
+After=network.target
+
+[Service]
+Type=simple
+User=deploy
+WorkingDirectory=/home/deploy/app/current
+ExecStart=/home/deploy/.rbenv/bin/rbenv exec bundle exec puma -C /home/deploy/app/shared/config/puma.rb
+ExecStop=/home/deploy/.rbenv/bin/rbenv exec bundle exec pumactl -S /home/deploy/app/shared/tmp/pids/puma.state stop
+TimeoutSec=15
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
