@@ -10,6 +10,13 @@ Create
 
   adduser --system --shell /bin/bash --group --home $home  user2
   useradd --create-home --shell /bin/bash --user-group user2
+  
+  if ! getent group $gname >/dev/null; then
+    addgroup --system $gname >/dev/null
+  fi
+  if ! getent passwd $uname >/dev/null; then
+    adduser --system --shell /bin/bash --group --home $home  $uname
+  fi
 Change a shell
   chsh
 Add to group
