@@ -1,6 +1,4 @@
-
- 
- Install virtualbox
+Install virtualbox
     brew cask info virtualbox
     brew cask install virtualbox
     
@@ -12,29 +10,6 @@
 Install vagrant
     brew cask install vagrant
     brew cask install vagrant-manager
-Create VM
-    vagrant version
-    vagrant box list
-    vagrant init ubuntu/trusty64 
-    vagrant init    bento/ubuntu-18.04
-    vagrant box add bento/ubuntu-18.04
-    vagrant up
-    vagrant ssh
-
-Snapshot
-  sname=install_pkgs
-  vagrant snapshot list
-  vagrant snapshot save $sname
-  vagrant snapshot restore $sname
-  vagrant snapshot delete $sname
-
-Use VM
-  vagrant box remove -f bento/ubuntu-18.04
-  vagrant port
-  vagrant reload
-  vagrant ssh, first login
-  ssh -p '2222' 'web@localhost'
-  ssh-copy-id -p 2222 web@localhost
 
 Check Ubuntu VM
   lsb_release -a
