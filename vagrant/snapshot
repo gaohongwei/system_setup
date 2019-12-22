@@ -1,7 +1,12 @@
-https://github.com/dergachev/vagrant-vbox-snapshot
+Snapshot
   vagrant plugin install vagrant-vbox-snapshot
-  vagrant snapshot take first_install
+
+  sname=install_pkgs
   vagrant snapshot list
+  vagrant snapshot save $sname
+  vagrant snapshot restore $sname
+  vagrant snapshot delete $sname
+  vagrant snapshot take $name
 
  vagrant snapshot take [vm-name] <SNAPSHOT_NAME>   
  # take snapshot, labeled by NAME
