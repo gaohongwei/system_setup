@@ -1,0 +1,33 @@
+Create VM
+    vagrant version
+    vagrant box list
+    vagrant init ubuntu/trusty64 
+    vagrant init    bento/ubuntu-18.04
+    vagrant box add bento/ubuntu-18.04
+    vagrant up
+    vagrant ssh
+    
+Use VM
+  vagrant box remove -f bento/ubuntu-18.04
+  vagrant port
+  vagrant reload
+  vagrant ssh, first login
+  ssh -p '2222' 'web@localhost'
+  ssh-copy-id -p 2222 web@localhost
+
+List VM
+  gwei$ vagrant global-status
+  id       name    provider   state   directory                           
+  ------------------------------------------------------------------------
+  6001ab6  default virtualbox running /Users/gwei/code/vm/ubuntu          
+  4b191e8  default virtualbox running /Users/gwei/code/vm/ubuntu_test 
+
+  gwei$ vagrant box list
+  bento/ubuntu-18.04 (parallels, 201910.31.0)
+  bento/ubuntu-18.04 (virtualbox, 201910.20.0)
+  bento/ubuntu-18.04 (virtualbox, 201912.14.0)
+
+Delete VM
+  vagrant destroy 4b191e8 # not working
+  vagrant box remove bento/ubuntu-18.04  --provider parallels
+  vagrant box remove bento/ubuntu-18.04 --box-version=201912.14.0
