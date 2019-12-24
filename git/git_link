@@ -1,0 +1,5 @@
+Create a link between files
+  ln -s ../../build/fe/opt/ml/lib/setup_services setup_services
+  git ls-files -s ./setup_services
+  git add ./setup_services
+  git ls-files -s ./setup_services
