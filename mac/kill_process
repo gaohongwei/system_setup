@@ -2,6 +2,8 @@
 Send signal to the process based on its name
 You can send signal to any process by specifying the full name or partial name. 
 
+# Kill Chrome helper
+    pkill -a -i "Google Chrome"
 $ pgrep -l sample
 12406 sample-server.p
 12425 sample-server.p
