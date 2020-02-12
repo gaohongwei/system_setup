@@ -13,3 +13,6 @@ Or reset repo
 
 git remote -v
 git push -u origin master
+
+
+git pull --allow-unrelated-histories
