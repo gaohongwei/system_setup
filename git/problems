@@ -1,9 +1,14 @@
+##### failed to push #####
+  Dev failed to push
+ Check Settings/Repository/Protected Branches
+
 ##### Ask for password when pushing #####
   Password for 'http://kwei@10.100.2.59:7990'
-Use ssh instead of http
-git remote -v
+  Use ssh instead of http
+  git remote -v
 
-git remote set-url origin git@github.com:yourname/yourrepo.git
+  git remote set-url origin git@github.com:yourname/yourrepo.git
 
-ip/project_name
-git remote set-url origin ssh://git@ip/wd/project_name.git
+  ip/project_name
+  git remote set-url origin ssh://git@ip/wd/project_name.git
+
