@@ -1,3 +1,5 @@
+# clean cache on bin
+git rm -r --cached bin
 ###### update description ######
 git commit --amend
 ###### Rebase ######
