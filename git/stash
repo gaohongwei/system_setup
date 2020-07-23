@@ -1,0 +1,6 @@
+git stash push -m "stashname"
+git stash save stashname
+git stash apply stash^{/stashname}
+
+git stash pop 3
+git stash apply 3
