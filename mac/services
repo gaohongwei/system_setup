@@ -1,4 +1,6 @@
-brew services start|stop|restart name
+# Commands
+  brew services list
+  brew services start|stop|restart name
 
 # Commands
   brew services start redis
