@@ -1,6 +1,7 @@
 # Commands
   brew services list
   brew services start|stop|restart name
+  brew services cleanup
   brew info redis
 
 # Commands
